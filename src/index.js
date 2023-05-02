@@ -5,6 +5,7 @@ import { CheckBox, Button, Input } from 'react-native';
 export default function App() {
 
   let [inputText, setInputText] = useState("")
+  let [filterText, setFilterText] = useState("")
   let [tasks, setTasks] = useState([
     { description: "Laundry", 
       key: "1", 
@@ -33,6 +34,8 @@ export default function App() {
 
     setInputText("")
   }, [inputText])
+
+  let filterTask = tasks.filter(item => item.match(new RegExp(filterText, 'i')))
   return (
     <SafeAreaView style={styles.Container}>
       <View style={styles.innerContainer}>
@@ -58,6 +61,11 @@ export default function App() {
           <Input value={inputText} onChangeText={setInputText} style={{height: 50, paddingBottom: 15, paddingLeft: 15}}></Input>
           <Button style={styles.button} title="Add Item" onPress={addTask}></Button>
 
+        </View>
+        <View>
+          <Input value={filterText} onChange={(event) => setFilterText(event.target.value)} placeholder="Filter by...">
+          
+          </Input>
         </View>
 
       </View>
