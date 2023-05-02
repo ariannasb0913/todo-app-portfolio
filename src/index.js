@@ -1,6 +1,6 @@
 import { React, useState, useCallback } from 'react';
 import { StyleSheet, SafeAreaView, FlatList, Text, View } from 'react-native';
-import { CheckBox, Button, Input } from '@rneui/themed'
+import { CheckBox, Button, Input } from 'react-native';
 
 export default function App() {
 

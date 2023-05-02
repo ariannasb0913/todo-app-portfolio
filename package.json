@@ -9,22 +9,34 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "build": "react-scripts build"
   },
   "dependencies": {
     "@expo/webpack-config": "^18.0.1",
-    "@rneui/base": "^4.0.0-rc.7",
-    "@rneui/themed": "^4.0.0-rc.7",
     "expo": "~48.0.6",
     "expo-status-bar": "~1.4.4",
     "gh-pages": "^5.0.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-native": "0.71.3",
-    "react-native-web": "~0.18.10"
+    "react-native-web": "~0.18.10",
+    "react-scripts": "^5.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"
   },
-  "private": true
+  "private": true,
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
