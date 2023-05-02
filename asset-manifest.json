@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/todo-app-portfolio/static/js/main.ce91919d.js",
+    "index.html": "/todo-app-portfolio/index.html",
+    "main.ce91919d.js.map": "/todo-app-portfolio/static/js/main.ce91919d.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.ce91919d.js"
+  ]
+}
