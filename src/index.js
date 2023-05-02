@@ -63,7 +63,7 @@ export default function App() {
 
         </View>
         <View>
-          <Input value={filterText} onChange={(event) => setFilterText(event.target.value)} placeholder="Filter by...">
+          <Input value={filterText} onChangeText={(event) => setFilterText(event.target.value)} placeholder="Filter by...">
           
           </Input>
         </View>
